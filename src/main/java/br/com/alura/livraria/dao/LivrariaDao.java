@@ -51,6 +51,7 @@ public class LivrariaDao {
 				a.setNome(rs.getString("nome"));
 				a.setEmail(rs.getString("email"));
 				a.setDataNascimento(rs.getDate("dataNascimento").toLocalDate());	
+				list.add(a);
 			}
 			
 			return list;
